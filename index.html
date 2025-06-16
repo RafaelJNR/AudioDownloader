@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+  <div class="window-controls">
+    <button id="minimize-btn" class="window-button minimize-button" title="Minimizar">─</button>
+    <button id="exit-btn" class="window-button exit-button" title="Cerrar">✕</button>
+  </div>
+
+    <div class="container">
+      <h1>YT AUDIO DOWNLOADER</h1>
+      <div class="input-group">
+        <h2>Descargar Audio</h2>
+        <div class="input-container">
+          <input type="text" id="url" placeholder="Pega el enlace de YouTube" />
+          <button id="btn">Descargar</button>
+        </div>
+
+        <div id="spinner" class="spinner hidden"></div>
+        <div id="status" class="status-message"></div>
+      </div>
+
+      <div class="musicreproductor-group">
+        <h2>Escuchar Audio</h2>
+        <input type="file" id="audioFile" accept="audio/*" />
+        <button id="customFileButton">Seleccionar archivo de audio</button>
+        <audio id="audio" controls preload="auto" class="musicrepoductor"></audio>
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+    <script src="music.js" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "ytmusic-downloader",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "youtube-dl-exec": "^2.0.1"
+  },
+  "build": {
+    "appId": "com.electron.ytmusic",
+    "win": {
+      "icon": "build/icon.ico",
+      "target": "nsis"
+    }
+  }
+}
