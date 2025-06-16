@@ -23,13 +23,13 @@ Aplicación de escritorio para descargar audio de YT y reproducir tus archivos l
 
 ## ⚙️ Configuración avanzada
 
-    Archivo	                 Propósito
-|------------|------------------------------------|
-|index.html  | Interfaz gráfica de la aplicación. |
-|styles.css	 | Personaliza los estilos. |
-|main.js	 | Lógica de descarga. |
-|music.js    | Lógica del reproductor de audio. |
-|preload.js	 | Puente entre procesos. |
+| Archivo | Propósito |
+|---------|-----------|
+|index.html | Interfaz gráfica de la aplicación. |
+|styles.css | Personaliza los estilos. |
+|main.js | Lógica de descarga. |
+|music.js | Lógica del reproductor de audio. |
+|preload.js | Puente entre procesos. |
 |renderer.js | Maneja la lógica de la interfaz de usuario y comunicación con main.js. |
 
 ## 🚀 Instalación
