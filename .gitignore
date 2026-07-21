@@ -1,0 +1,58 @@
+# Carpetas específicas a ignorar
+/bin/
+/dist/
+/node_modules/
+/images/
+
+# Archivos de entorno
+.env
+.env.local
+.env.development
+.env.production
+
+# Logs y reportes
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Archivos de Electron
+app-update.yml
+*.exe
+*.dmg
+*.deb
+*.snap
+*.AppImage
+
+# Archivos de caché
+.cache/
+.temp/
+
+# Archivos de dependencias
+jspm_packages/
+
+# Archivos de TypeScript
+*.tsbuildinfo
+
+# Archivos de coverage
+coverage/
+.nyc_output/
+
+# Archivos de producción generados
+build/
+out/
+release/

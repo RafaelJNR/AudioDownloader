@@ -18,7 +18,7 @@
     "appId": "com.electron.ytmusic",
     "win": {
       "icon": "build/icon.ico",
-      "target": "nsis"
+      "target": ["nsis", "portable"]
     }
   }
 }

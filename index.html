@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>YT Audio Downloader</title>
+    <meta name="description" content="Descargador de audio de YouTube" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
 
-  <div class="window-controls">
-    <button id="minimize-btn" class="window-button minimize-button" title="Minimizar">─</button>
-    <button id="exit-btn" class="window-button exit-button" title="Cerrar">✕</button>
-  </div>
+    <!-- Barra de arrastre de ventana -->
+    <div class="drag-region"></div>
+
+    <div class="window-controls">
+      <button id="minimize-btn" class="window-button minimize-button" title="Minimizar">_</button>
+      <button id="exit-btn" class="window-button exit-button" title="Cerrar">✕</button>
+    </div>
 
     <div class="container">
-      <h1>YT AUDIO DOWNLOADER</h1>
-      <div class="input-group">
-        <h2>Descargar Audio</h2>
-        <div class="input-container">
-          <input type="text" id="url" placeholder="Pega el enlace de YouTube" />
-          <button id="btn">Descargar</button>
+      <header class="app-header">
+        <h1>YT AUDIO <span>DOWNLOADER</span></h1>
+      </header>
+
+      <main class="content">
+        <div class="input-group">
+          <h2>Descargar Audio</h2>
+          <div class="input-container">
+            <input type="text" id="url" placeholder="Pega el enlace de YouTube aquí..." autocomplete="off" />
+            <button id="btn">Descargar</button>
+          </div>
+
+          <div id="spinner" class="spinner hidden"></div>
+          <div id="status" class="status-message"></div>
         </div>
 
-        <div id="spinner" class="spinner hidden"></div>
-        <div id="status" class="status-message"></div>
-      </div>
-
-      <div class="musicreproductor-group">
-        <h2>Escuchar Audio</h2>
-        <input type="file" id="audioFile" accept="audio/*" />
-        <button id="customFileButton">Seleccionar archivo de audio</button>
-        <audio id="audio" controls preload="auto" class="musicrepoductor"></audio>
-      </div>
+        <div class="musicreproductor-group">
+          <h2>Reproductor Local</h2>
+          <input type="file" id="audioFile" accept="audio/*" />
+          <button id="customFileButton">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+            Seleccionar archivo
+          </button>
+          <audio id="audio" controls preload="auto" class="musicrepoductor"></audio>
+        </div>
+      </main>
     </div>
 
     <script src="renderer.js"></script>
