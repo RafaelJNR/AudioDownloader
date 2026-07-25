@@ -15,6 +15,7 @@ function createWindow() {
     height: 600,
     resizable: false,
     frame: false,
+    icon: path.join(__dirname,'assets', 'icon.png'),
     titleBarStyle: 'hidden',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
